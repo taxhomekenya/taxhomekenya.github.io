@@ -143,8 +143,8 @@ nav a:hover::after {
    ============================================ */
 
 .hero {
-  background: linear-gradient(rgba(26, 71, 42, 0.75), rgba(45, 106, 79, 0.75)), 
-              linear-gradient(135deg, #1a472a, #2d6a4f);
+  background: linear-gradient(rgba(26, 71, 42, 0.65), rgba(45, 106, 79, 0.65)), 
+              url('../yourphoto.jpg') center/cover no-repeat;
   color: white;
   padding: 120px 2rem;
   text-align: center;
