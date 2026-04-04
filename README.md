@@ -1,4 +1,4 @@
-# Tax Home Kenya - Redesigned Website
+# Tax Home Kenya Limited - Redesigned Website
 
 A modern, professional redesign of the Tax Home Kenya Limited website with enhanced features, improved design, and new sections.
 
