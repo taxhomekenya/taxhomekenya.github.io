@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://taxhomekenya.github.io/sitemap.xml
