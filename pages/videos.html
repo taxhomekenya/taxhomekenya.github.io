@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Tax Videos & Resources | Tax Home Kenya Limited</title>
+  <meta name="description" content="Watch our tax tips videos and access valuable resources for Kenyan businesses. Learn about KRA compliance, eTIMS, VAT, and tax planning from Tax Home Kenya Limited.">
+  <meta name="keywords" content="tax videos Kenya, tax tips, KRA videos, eTIMS tutorial, tax compliance videos, YouTube tax channel, Kenyan tax advice">
+  <meta name="author" content="Tax Home Kenya Limited">
+  <link rel="canonical" href="https://taxhomekenya.github.io/pages/videos.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://taxhomekenya.github.io/pages/videos.html">
+  <meta property="og:title" content="Tax Videos & Resources | Tax Home Kenya Limited">
+  <meta property="og:description" content="Watch our tax tips videos and access valuable resources for Kenyan businesses.">
+  <meta property="og:image" content="https://taxhomekenya.github.io/assets/logo.png">
+  
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  
+  <style>
+    /* Videos section specific styles */
+    .videos-section {
+      background: var(--bg-white);
+      border-top: 5px solid var(--accent-gold);
+    }
+
+    .videos-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .video-card {
+      background: var(--bg-light);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+      border: 2px solid transparent;
+    }
+
+    .video-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--accent-gold);
+    }
+
+    .video-placeholder {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .video-placeholder::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, transparent 70%);
+    }
+
+    .video-placeholder span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .video-content {
+      padding: 1.5rem;
+    }
+
+    .video-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 0.8rem;
+    }
+
+    .video-description {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .video-tag {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--accent-gold), var(--accent-yellow));
+      color: var(--primary-color);
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .coming-soon-banner {
+      background: linear-gradient(135deg, var(--accent-gold), var(--accent-yellow));
+      color: var(--primary-color);
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      margin-bottom: 3rem;
+      border: 2px solid var(--accent-brown);
+    }
+
+    .coming-soon-banner h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .coming-soon-banner p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .youtube-subscribe {
+      display: inline-block;
+      background: #ff0000;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .youtube-subscribe:hover {
+      background: #cc0000;
+      transform: translateY(-2px);
+    }
+
+    .breadcrumb {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-bottom: 2rem;
+    }
+
+    .breadcrumb a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .breadcrumb a:hover {
+      color: var(--accent-gold);
+    }
+
+    .breadcrumb span {
+      color: var(--accent-gold);
+      margin: 0 0.5rem;
+    }
+
+    .resources-intro {
+      text-align: center;
+      margin-bottom: 3rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .resources-intro p {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      line-height: 1.8;
+    }
+
+    @media (max-width: 768px) {
+      .videos-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ============================================
+       HEADER & NAVIGATION
+       ============================================ -->
+  <header>
+    <div class="header-container">
+      <a href="../index.html" class="logo-section">
+        <img src="../assets/logo.png" alt="Tax Home Kenya Limited Logo" class="logo-img">
+        <div class="logo-text">
+          <h1>Tax Home Kenya Limited</h1>
+          <p>SIMPLIFYING YOUR TAX JOURNEY</p>
+        </div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../pages/blog.html">Blog</a></li>
+          <li><a href="../pages/testimonials.html">Testimonials</a></li>
+          <li><a href="../pages/tax-guide.html">Tax Guide</a></li>
+          <li><a href="../pages/videos.html">Videos</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-btn">☰</button>
+    </div>
+  </header>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Tax Tips Videos & Resources</h1>
+      <p>Learn practical tax advice and compliance tips from Tax Home Kenya Limited</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       VIDEOS SECTION
+       ============================================ -->
+  <section class="videos-section">
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a>
+      <span>/</span>
+      <span>Videos</span>
+    </div>
+
+    <div class="resources-intro">
+      <h2 class="section-title">Educational Tax Videos</h2>
+      <p>Subscribe to our YouTube channel for short, practical tax tips videos designed to help Kenyan business owners stay compliant and make informed tax decisions.</p>
+    </div>
+
+    <!-- Coming Soon Banner -->
+    <div class="coming-soon-banner">
+      <h3>🎬 Coming Soon!</h3>
+      <p>We're preparing exclusive tax tips videos to help you navigate KRA compliance, eTIMS, VAT, and more.</p>
+      <a href="https://www.youtube.com/@TaxHomeKenya" target="_blank" class="youtube-subscribe">Subscribe on YouTube</a>
+    </div>
+
+    <!-- Sample Video Cards -->
+    <div class="videos-container">
+      <!-- Video 1 - Placeholder -->
+      <div class="video-card">
+        <div class="video-placeholder">
+          <span>▶️</span>
+        </div>
+        <div class="video-content">
+          <div class="video-title">Getting Started with iTax: A Beginner's Guide</div>
+          <p class="video-description">Learn how to register and navigate the KRA iTax portal. We walk you through the essential steps to set up your tax account and file your first return.</p>
+          <div>
+            <span class="video-tag">iTax</span>
+            <span class="video-tag">KRA</span>
+            <span class="video-tag">Beginner</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 2 - Placeholder -->
+      <div class="video-card">
+        <div class="video-placeholder">
+          <span>▶️</span>
+        </div>
+        <div class="video-content">
+          <div class="video-title">eTIMS Compliance: What Every Business Needs to Know</div>
+          <p class="video-description">Understand the Electronic Tax Invoice Management System (eTIMS) requirements. We explain how to ensure your business is compliant with KRA's eTIMS regulations.</p>
+          <div>
+            <span class="video-tag">eTIMS</span>
+            <span class="video-tag">Compliance</span>
+            <span class="video-tag">KRA</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 3 - Placeholder -->
+      <div class="video-card">
+        <div class="video-placeholder">
+          <span>▶️</span>
+        </div>
+        <div class="video-content">
+          <div class="video-title">VAT Registration: When and How to Register</div>
+          <p class="video-description">Is your business VAT-eligible? Learn about VAT thresholds, the registration process, and how VAT affects your business operations in Kenya.</p>
+          <div>
+            <span class="video-tag">VAT</span>
+            <span class="video-tag">Registration</span>
+            <span class="video-tag">Tax Planning</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 4 - Placeholder -->
+      <div class="video-card">
+        <div class="video-placeholder">
+          <span>▶️</span>
+        </div>
+        <div class="video-content">
+          <div class="video-title">Common Tax Mistakes and How to Avoid Them</div>
+          <p class="video-description">Discover the top 10 tax mistakes made by Kenyan businesses and practical strategies to avoid them. Protect your business from penalties and compliance issues.</p>
+          <div>
+            <span class="video-tag">Tax Tips</span>
+            <span class="video-tag">Compliance</span>
+            <span class="video-tag">SMEs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 5 - Placeholder -->
+      <div class="video-card">
+        <div class="video-placeholder">
+          <span>▶️</span>
+        </div>
+        <div class="video-content">
+          <div class="video-title">Bookkeeping Basics for Small Business Owners</div>
+          <p class="video-description">Master the fundamentals of bookkeeping. Learn how to organize your financial records, track expenses, and prepare for tax filing season.</p>
+          <div>
+            <span class="video-tag">Bookkeeping</span>
+            <span class="video-tag">Accounting</span>
+            <span class="video-tag">Business</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 6 - Placeholder -->
+      <div class="video-card">
+        <div class="video-placeholder">
+          <span>▶️</span>
+        </div>
+        <div class="video-content">
+          <div class="video-title">Tax Planning Strategies for Business Growth</div>
+          <p class="video-description">Explore proactive tax planning strategies that can help your business grow while minimizing your tax burden legally. Maximize your profits with smart tax decisions.</p>
+          <div>
+            <span class="video-tag">Tax Planning</span>
+            <span class="video-tag">Strategy</span>
+            <span class="video-tag">Growth</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       RESOURCES SECTION
+       ============================================ -->
+  <section style="background: linear-gradient(135deg, #f9f7f4, #fffacd); border-top: 5px solid var(--accent-brown);">
+    <h2 class="section-title">Downloadable Resources</h2>
+    <p class="section-subtitle">Access our collection of guides, checklists, and templates to support your tax compliance journey</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>📋 Tax Compliance Checklist</h3>
+        <p>A comprehensive checklist of all tax obligations and deadlines for Kenyan businesses. Ensure you don't miss any important filing dates.</p>
+        <a href="../resources/tax-compliance-checklist.pdf" download style="display: inline-block; margin-top: 1rem; color: var(--primary-color); font-weight: 600; text-decoration: none; transition: var(--transition);" onmouseover="this.style.color='var(--accent-gold)';" onmouseout="this.style.color='var(--primary-color)';">⬇️ Download PDF</a>
+      </div>
+
+      <div class="service-card">
+        <h3>📚 eTIMS Implementation Guide</h3>
+        <p>Step-by-step guide to implementing eTIMS in your business. Learn about system setup, integration, and compliance requirements.</p>
+        <a href="../resources/etims-implementation-guide.pdf" download style="display: inline-block; margin-top: 1rem; color: var(--primary-color); font-weight: 600; text-decoration: none; transition: var(--transition);" onmouseover="this.style.color='var(--accent-gold)';" onmouseout="this.style.color='var(--primary-color)';">⬇️ Download PDF</a>
+      </div>
+
+      <div class="service-card">
+        <h3>💡 10 Tax Mistakes Guide</h3>
+        <p>Learn about the 10 most common tax mistakes made by small businesses in Kenya and practical strategies to avoid them.</p>
+        <a href="../resources/10-tax-mistakes-small-businesses-kenya.pdf" download style="display: inline-block; margin-top: 1rem; color: var(--primary-color); font-weight: 600; text-decoration: none; transition: var(--transition);" onmouseover="this.style.color='var(--accent-gold)';" onmouseout="this.style.color='var(--primary-color)';">⬇️ Download PDF</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CTA SECTION
+       ============================================ -->
+  <section style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; text-align: center; padding: 60px 2rem; border-top: 5px solid var(--accent-gold);">
+    <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">Need Personalized Tax Advice?</h2>
+    <p style="font-size: 1.1rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Our expert team is ready to provide tailored tax consultancy and accounting services for your business.</p>
+    <a href="../index.html#contact" class="cta-button">Get in Touch Today</a>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer style="background: var(--primary-color); color: white; padding: 3rem 2rem; text-align: center; border-top: 3px solid var(--accent-gold);">
+    <p>&copy; 2024 Tax Home Kenya Limited. All rights reserved. | Simplifying your tax journey</p>
+    <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.8;">Professional tax consultancy and accounting services in Kenya</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

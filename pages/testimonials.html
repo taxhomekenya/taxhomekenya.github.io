@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Client Testimonials | Tax Home Kenya Limited</title>
+  <meta name="description" content="Read what our satisfied clients say about Tax Home Kenya's professional tax consultancy and accounting services in Kenya.">
+  <meta name="keywords" content="tax consultant reviews, client testimonials, Tax Home Kenya, tax services Kenya, accounting services reviews">
+  <meta name="author" content="Tax Home Kenya Limited">
+  <link rel="canonical" href="https://taxhomekenya.github.io/pages/testimonials.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://taxhomekenya.github.io/pages/testimonials.html">
+  <meta property="og:title" content="Client Testimonials | Tax Home Kenya Limited">
+  <meta property="og:description" content="Read what our satisfied clients say about our professional tax consultancy and accounting services.">
+  <meta property="og:image" content="https://taxhomekenya.github.io/assets/logo.png">
+  
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  
+  <style>
+    /* Testimonials-specific styles */
+    .testimonials-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .testimonial-card {
+      background: var(--bg-white);
+      border-radius: 12px;
+      padding: 2.5rem;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+      border-left: 5px solid var(--accent-gold);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .testimonial-card::before {
+      content: '"';
+      position: absolute;
+      top: -10px;
+      left: 15px;
+      font-size: 4rem;
+      color: var(--accent-gold);
+      opacity: 0.3;
+      font-family: Georgia, serif;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-hover);
+      border-left-color: var(--accent-yellow);
+    }
+
+    .star-rating {
+      color: var(--accent-gold);
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      letter-spacing: 2px;
+    }
+
+    .testimonial-quote {
+      font-size: 1rem;
+      color: var(--text-light);
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+      position: relative;
+      z-index: 1;
+    }
+
+    .testimonial-author {
+      font-weight: 700;
+      color: var(--primary-color);
+      font-size: 1.05rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .testimonial-business {
+      font-size: 0.9rem;
+      color: var(--accent-brown);
+      font-weight: 500;
+    }
+
+    .testimonials-section {
+      background: var(--bg-white);
+      border-top: 5px solid var(--accent-gold);
+    }
+
+    .testimonials-intro {
+      text-align: center;
+      margin-bottom: 3rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .testimonials-intro p {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      line-height: 1.8;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-bottom: 2rem;
+    }
+
+    .breadcrumb a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .breadcrumb a:hover {
+      color: var(--accent-gold);
+    }
+
+    .breadcrumb span {
+      color: var(--accent-gold);
+      margin: 0 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .testimonials-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .testimonial-card {
+        padding: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ============================================
+       HEADER & NAVIGATION
+       ============================================ -->
+  <header>
+    <div class="header-container">
+      <a href="../index.html" class="logo-section">
+        <img src="../assets/logo.png" alt="Tax Home Kenya Limited Logo" class="logo-img">
+        <div class="logo-text">
+          <h1>Tax Home Kenya Limited</h1>
+          <p>SIMPLIFYING YOUR TAX JOURNEY</p>
+        </div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../pages/blog.html">Blog</a></li>
+          <li><a href="../pages/testimonials.html">Testimonials</a></li>
+          <li><a href="../index.html#resources">Resources</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-btn">☰</button>
+    </div>
+  </header>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Client Testimonials</h1>
+      <p>Hear what our valued clients have to say about their experience with Tax Home Kenya Limited</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TESTIMONIALS SECTION
+       ============================================ -->
+  <section class="testimonials-section">
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a>
+      <span>/</span>
+      <span>Testimonials</span>
+    </div>
+
+    <div class="testimonials-intro">
+      <h2 class="section-title">What Our Clients Say</h2>
+      <p>We take pride in the relationships we've built with our clients across Kenya. Their success is our success, and their testimonials reflect our commitment to excellence in tax consultancy and accounting services.</p>
+    </div>
+
+    <div class="testimonials-container">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card">
+        <div class="star-rating">★★★★★</div>
+        <p class="testimonial-quote">"Tax Home Kenya transformed our understanding of KRA compliance. Their team made the complex process of VAT and income tax filing so straightforward. We've saved countless hours and avoided penalties thanks to their expert guidance! Highly recommend for any small business in Kenya."</p>
+        <div class="testimonial-author">Jane Wanjiku</div>
+        <div class="testimonial-business">Boutique Fashion Retailer (SME)</div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card">
+        <div class="star-rating">★★★★★</div>
+        <p class="testimonial-quote">"As a freelancer, managing my taxes used to be a headache. Tax Home Kenya helped me set up my iTax profile correctly, advised on allowable expenses, and filed my returns efficiently. Their personalized approach is a game-changer. Truly simplifying my tax journey!"</p>
+        <div class="testimonial-author">David Ochieng</div>
+        <div class="testimonial-business">Freelance Graphic Designer</div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card">
+        <div class="star-rating">★★★★★</div>
+        <p class="testimonial-quote">"We were struggling with eTIMS implementation, but Tax Home Kenya stepped in and provided seamless support. Their training was clear, and their ongoing assistance has been invaluable. Our business now operates with full tax confidence."</p>
+        <div class="testimonial-author">Sarah Chebet</div>
+        <div class="testimonial-business">Organic Produce Supplier (Small Business)</div>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="testimonial-card">
+        <div class="star-rating">★★★★★</div>
+        <p class="testimonial-quote">"The team at Tax Home Kenya offers exceptional tax planning advice. They helped us optimize our corporate tax structure and ensure all our statutory returns, including PAYE and NSSF, are always on time. A reliable partner for business growth."</p>
+        <div class="testimonial-author">Peter Kimani</div>
+        <div class="testimonial-business">IT Solutions Provider (SME)</div>
+      </div>
+
+      <!-- Testimonial 5 -->
+      <div class="testimonial-card">
+        <div class="star-rating">★★★★★</div>
+        <p class="testimonial-quote">"From business registration to annual financial statements, Tax Home Kenya has been with us every step of the way. Their accounting services are meticulous, and their advice is always practical and easy to understand. They truly care about their clients' success."</p>
+        <div class="testimonial-author">Fatuma Ali</div>
+        <div class="testimonial-business">Restaurant Owner</div>
+      </div>
+
+      <!-- Testimonial 6 -->
+      <div class="testimonial-card">
+        <div class="star-rating">★★★★★</div>
+        <p class="testimonial-quote">"Navigating tax regulations for an online business in Kenya felt overwhelming. Tax Home Kenya provided clear guidance on VAT for digital services and helped us streamline our bookkeeping. Their proactive communication is fantastic!"</p>
+        <div class="testimonial-author">Michael Mutua</div>
+        <div class="testimonial-business">E-commerce Startup</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CTA SECTION
+       ============================================ -->
+  <section style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; text-align: center; padding: 60px 2rem; border-top: 5px solid var(--accent-gold);">
+    <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">Ready to Simplify Your Tax Journey?</h2>
+    <p style="font-size: 1.1rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Join our satisfied clients and experience professional tax consultancy tailored to your business needs.</p>
+    <a href="../index.html#contact" class="cta-button">Get Started Today</a>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer style="background: var(--primary-color); color: white; padding: 3rem 2rem; text-align: center; border-top: 3px solid var(--accent-gold);">
+    <p>&copy; 2024 Tax Home Kenya Limited. All rights reserved. | Simplifying your tax journey</p>
+    <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.8;">Professional tax consultancy and accounting services in Kenya</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
