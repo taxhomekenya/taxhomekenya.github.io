@@ -7,9 +7,19 @@ document.addEventListener('DOMContentLoaded', function() {
   const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
   const nav = document.querySelector('nav');
 
-  if (mobileMenuBtn) {
+  if (mobileMenuBtn && nav) {
     mobileMenuBtn.addEventListener('click', function() {
-      nav.classList.toggle('active');
+      const isOpen = nav.classList.toggle('active');
+      mobileMenuBtn.setAttribute('aria-expanded', String(isOpen));
+      mobileMenuBtn.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    });
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape' && nav.classList.contains('active')) {
+        nav.classList.remove('active');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        mobileMenuBtn.setAttribute('aria-label', 'Open navigation menu');
+        mobileMenuBtn.focus();
+      }
     });
   }
 
@@ -19,6 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
     link.addEventListener('click', function() {
       if (nav.classList.contains('active')) {
         nav.classList.remove('active');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        mobileMenuBtn.setAttribute('aria-label', 'Open navigation menu');
       }
     });
   });
