@@ -9,6 +9,13 @@
 <style>
     .blog-post-container{max-width:800px;margin:0 auto;padding:60px 2rem;background:white;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.05)}.blog-post-header{margin-bottom:2rem;border-bottom:3px solid #d4a574;padding-bottom:2rem}.blog-post-title{font-size:2.2rem;color:#1a472a;margin-bottom:1rem;line-height:1.3}.blog-post-meta{color:#d4a574;font-size:.95rem;font-weight:600;margin-bottom:.5rem}.blog-post-content{line-height:1.8;color:#333;font-size:1.05rem}.blog-post-content h3{color:#1a472a;font-size:1.4rem;margin-top:2.5rem;margin-bottom:1rem;padding-bottom:.5rem;border-bottom:2px solid #f4e8d8}.highlight-box{background:linear-gradient(135deg,#e8f5e9,#f1f8e9);border-left:5px solid #1a472a;padding:1.5rem 2rem;border-radius:0 12px 12px 0;margin:1.5rem 0}.gold-box{background:linear-gradient(135deg,#fdf6ec,#f9ecd7);border-left:5px solid #d4a574;padding:1.5rem 2rem;border-radius:0 12px 12px 0;margin:1.5rem 0}.back-to-blog{display:inline-block;margin-bottom:2rem;color:#d4a574;text-decoration:none;font-weight:600}.footer-bottom{text-align:center;padding:2rem 0;background:#1a472a;color:white;margin-top:3rem}
   .whatsapp-button{display:inline-block;background:#25D366;color:#fff!important;padding:.8rem 1.2rem;border-radius:8px;text-decoration:none!important;font-weight:700;margin-top:.75rem;box-shadow:0 3px 8px rgba(37,211,102,.25)}.whatsapp-button:hover{background:#1ebe5d;color:#fff!important;transform:translateY(-1px)}</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PBQ6FB82J4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PBQ6FB82J4');
+</script>
 </head>
 <body>
 <nav class="navbar"><div class="nav-container"><a class="logo" href="../../index.html"><img alt="Tax Home Kenya Limited Logo" src="../../assets/logo.png" style="height:50px;margin-right:10px;"/>Tax Home Kenya Limited</a><ul class="nav-links"><li><a href="../../index.html">Home</a></li><li><a class="active" href="../blog.html">Blog</a></li><li><a href="../../index.html#contact">Contact</a></li></ul></div></nav>
@@ -20,4 +27,20 @@
 <h3>Why This Matters</h3><p>This amendment provides greater certainty for lenders, reduces disputes with KRA, and aligns tax treatment with the commercial reality that unrecoverable loans form part of the normal business of lending.</p><p>It also resolves longstanding uncertainty created by conflicting decisions from the Tax Appeals Tribunal and the courts.</p>
 <div class="gold-box"><p><strong>TAX HOME KENYA</strong><br/><em>Simplifying Your Tax Journey</em></p><p>📱 +254 725 416 982<br/>📧 <a href="mailto:taxhomekenyalimited24@gmail.com">taxhomekenyalimited24@gmail.com</a></p></div>
 <a class="whatsapp-button" href="https://wa.me/254725416982?text=Hello%20Tax%20Home%20Kenya%2C%20I%20would%20like%20help%20with%20the%20Finance%20Act%202026." rel="noopener" target="_blank">💬 Chat on WhatsApp</a></div></div></main><footer class="footer-bottom"><p>© 2026 Tax Home Kenya Limited. All Rights Reserved.</p></footer>
+<script id="thk-event-tracking">
+(function(){
+  document.addEventListener('click', function(e){
+    var a=e.target.closest && e.target.closest('a');
+    if(!a || typeof gtag !== 'function') return;
+    var href=a.href || '';
+    if(href.indexOf('wa.me/') !== -1 || href.indexOf('whatsapp') !== -1){
+      gtag('event','whatsapp_click',{link_url:href,page_location:location.href});
+    } else if(href.indexOf('mailto:') === 0){
+      gtag('event','email_click',{link_url:href,page_location:location.href});
+    } else if(/\.(pdf|xlsx?|csv|docx?)(\?|$)/i.test(href)){
+      gtag('event','resource_download',{file_name:href.split('/').pop().split('?')[0],page_location:location.href});
+    }
+  });
+})();
+</script>
 </body></html>

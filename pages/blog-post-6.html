@@ -384,5 +384,21 @@
   <button id="scrollToTop" onclick="scrollToTop()" style="display: none; position: fixed; bottom: 30px; right: 30px; background: #d4a574; color: #1a472a; border: none; padding: 12px 15px; border-radius: 50%; cursor: pointer; font-size: 1.2rem; z-index: 999; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">↑</button>
 
   <script src="../js/main.js"></script>
+<script id="thk-event-tracking">
+(function(){
+  document.addEventListener('click', function(e){
+    var a=e.target.closest && e.target.closest('a');
+    if(!a || typeof gtag !== 'function') return;
+    var href=a.href || '';
+    if(href.indexOf('wa.me/') !== -1 || href.indexOf('whatsapp') !== -1){
+      gtag('event','whatsapp_click',{link_url:href,page_location:location.href});
+    } else if(href.indexOf('mailto:') === 0){
+      gtag('event','email_click',{link_url:href,page_location:location.href});
+    } else if(/\.(pdf|xlsx?|csv|docx?)(\?|$)/i.test(href)){
+      gtag('event','resource_download',{file_name:href.split('/').pop().split('?')[0],page_location:location.href});
+    }
+  });
+})();
+</script>
 </body>
 </html>
