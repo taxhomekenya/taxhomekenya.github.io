@@ -387,6 +387,15 @@ section {
   overflow: hidden;
 }
 
+.service-image {
+  display: block;
+  width: calc(100% + 4rem);
+  height: 210px;
+  object-fit: cover;
+  margin: -2rem -2rem 1.5rem;
+  border-bottom: 3px solid var(--accent-gold);
+}
+
 .service-card::before {
   content: '';
   position: absolute;
