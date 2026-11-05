@@ -25,7 +25,11 @@
     .education-card{background:#fff;border:1px solid #eee;border-radius:12px;box-shadow:0 4px 16px rgba(26,71,42,.09);padding:1.8rem;max-width:760px;margin:0 auto;text-align:center}
     .education-card h2{color:#1a472a;margin-top:0}
     .education-card p{color:#555;line-height:1.7}
+    .education-summary{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 2rem;justify-content:center}
     .education-note{display:inline-block;margin-top:1rem;background:#e8f5e9;color:#1a472a;border-radius:999px;padding:.65rem 1rem;font-weight:700}
+    .education-date{font-size:.82rem;color:#b07e45;font-weight:700;margin-bottom:.45rem}
+    .education-link{display:inline-block;margin-top:.5rem;color:#1a472a;font-weight:800;text-decoration:none}
+    .education-link:hover{color:#b07e45}
     .education-help{margin-top:2rem;text-align:center;color:#666;line-height:1.6}
     @media(max-width:600px){.education-wrap{padding-left:1rem;padding-right:1rem}}
   </style>
@@ -64,10 +68,18 @@
 
   <main class="education-wrap">
     <div class="education-intro"><strong>About this section:</strong> Practical Tax Education will provide clear explanations, examples, checklists and everyday guidance on Kenyan tax matters. The lessons will focus on what taxpayers need to know and what they should do in practice.</div>
+    <div class="education-summary"><span class="education-note">Published articles: 2</span><span class="education-note">Latest articles: Accounting Tips</span></div>
     <article class="education-card">
-      <h2>New lessons coming soon</h2>
-      <p>Tax Home Kenya is preparing practical education content covering topics such as PAYE, VAT, income tax, tax returns, eTIMS, statutory deductions, record keeping and KRA compliance.</p>
-      <span class="education-note">Content will be added here</span>
+      <div class="education-date">5 November 2026</div>
+      <h2>Why Do We Pass Year-End Adjustment Journals?</h2>
+      <p>Learn why accountants adjust income, expenses, assets and liabilities before preparing year-end financial statements.</p>
+      <a class="education-link" href="practical-tax-education/year-end-adjustment-journals.html">Read article →</a>
+    </article>
+    <article class="education-card">
+      <div class="education-date">5 November 2026</div>
+      <h2>Accrued Expenses: What Happens When the Bill Arrives?</h2>
+      <p>See how to recognise an expense at year-end, clear the accrual when the bill arrives and avoid double-counting.</p>
+      <a class="education-link" href="practical-tax-education/accrued-expenses-when-the-bill-arrives.html">Read article →</a>
     </article>
     <p class="education-help">Have a tax topic you would like explained in simple language? Contact Tax Home Kenya Limited on <a href="https://wa.me/254725416982">WhatsApp</a> or email <a href="mailto:taxhomekenyalimited24@gmail.com">taxhomekenyalimited24@gmail.com</a>.</p>
   </main>
@@ -80,5 +92,6 @@
     </div>
   </footer>
   <script src="../js/script.js"></script>
+  <script id="thk-event-tracking">(function(){document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a');if(!a||typeof gtag!=='function')return;var href=a.href||'';if(href.indexOf('wa.me/')!==-1||href.indexOf('whatsapp')!==-1){gtag('event','whatsapp_click',{link_url:href,page_location:location.href});}else if(href.indexOf('mailto:')===0){gtag('event','email_click',{link_url:href,page_location:location.href});}});})();</script>
 </body>
 </html>
